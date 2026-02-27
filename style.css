@@ -1,0 +1,73 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+h1,
+h2 {
+    margin-top: 0;
+}
+
+.hobbies-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows items to wrap onto the next line */
+    justify-content: center;
+    /* Centers the hobby cards */
+    gap: 1rem;
+    /* Space between the cards */
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    /* Optional: Sets a max width for the container */
+    margin: 0 auto;
+    /* Centers the container on the page */
+}
+
+.hobby-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 250px;
+    /* Flex-grow, flex-shrink, flex-basis for responsive card sizing */
+    min-width: 250px;
+    /* Ensures cards don't get too small */
+}
+
+.hobby-card h2 {
+    color: #007BFF;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Optional: Basic responsiveness using media queries */
+@media (max-width: 600px) {
+    .hobbies-container {
+        flex-direction: column;
+        /* Stacks cards vertically on small screens */
+        align-items: center;
+    }
+
+    .hobby-card {
+        width: 90%;
+    }
+}
